@@ -1,0 +1,147 @@
+* {
+  margin: 0px;
+  padding: 0px;
+  font-family: "Segoe UI"; }
+
+body {
+  background-color: #546DE5; }
+
+.container {
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  display: grid;
+  grid-template-columns: 50px 1fr 1fr 50px;
+  grid-template-rows: 30px 1fr 30px; }
+
+.login {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  justify-content: center;
+  grid-column-start: 2;
+  grid-row-start: 2; }
+  .login .login__container {
+    background: white;
+    align-items: center;
+    width: 370px;
+    height: 370px;
+    padding: 45px;
+    border-radius: 10px;
+    box-shadow: 0px 4px 3px 1px rgba(0, 0, 0, 0.26); }
+    .login .login__container h2 {
+      color: #707070;
+      font-size: 28px; }
+    .login .login__container .login__container--form {
+      margin-top: 30px;
+      display: flex;
+      flex-direction: column; }
+      .login .login__container .login__container--form .input {
+        border: none;
+        border-bottom: 3px solid #546DE5;
+        padding: 10px 20px;
+        margin-bottom: 10px;
+        outline: none;
+        font-size: 16px; }
+      .login .login__container .login__container--form ::placeholder {
+        font-size: 20px;
+        opacity: 0.4; }
+      .login .login__container .login__container--form .form__remember {
+        display: flex;
+        justify-content: space-between;
+        padding: 0px 10px;
+        margin: 10px 0px;
+        align-items: center; }
+        .login .login__container .login__container--form .form__remember .form__remember--check {
+          display: flex;
+          align-items: center; }
+          .login .login__container .login__container--form .form__remember .form__remember--check label {
+            position: relative;
+            display: flex;
+            align-items: center;
+            cursor: pointer;
+            transition: 450ms all; }
+            .login .login__container .login__container--form .form__remember .form__remember--check label .checkbox {
+              margin-right: 5px; }
+        .login .login__container .login__container--form .form__remember .form__remember--password {
+          text-decoration: none;
+          color: #546DE5;
+          font-weight: bold;
+          cursor: pointer; }
+        .login .login__container .login__container--form .form__remember .form__remember--password:hover {
+          text-decoration: underline; }
+      .login .login__container .login__container--form .button {
+        background: #778BEB;
+        color: white;
+        font-weight: bold;
+        padding: 10px;
+        border-radius: 25px;
+        margin-top: 10px;
+        border: none;
+        cursor: pointer;
+        transition: 250ms all; }
+      .login .login__container .login__container--form .button:hover {
+        transform: scale(1.05); }
+      .login .login__container .login__container--form .form__social-media > div > img {
+        width: 30px; }
+      .login .login__container .login__container--form .form__social-media {
+        margin: 25px 0px;
+        display: flex;
+        justify-content: center; }
+      .login .login__container .login__container--form .form__social-media > div {
+        margin: 0px 10px;
+        background-color: transparent;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 45px;
+        height: 45px;
+        cursor: pointer;
+        border-radius: 30px;
+        box-shadow: 0px 4px 17px 3px rgba(0, 0, 0, 0.25);
+        transition: 250ms all; }
+        .login .login__container .login__container--form .form__social-media > div:hover {
+          transform: scale(1.1); }
+    .login .login__container .login__container--register {
+      display: flex;
+      justify-content: center;
+      color: #707070; }
+      .login .login__container .login__container--register span {
+        font-weight: bold;
+        margin-left: 3px;
+        cursor: pointer; }
+        .login .login__container .login__container--register span:hover {
+          text-decoration: underline; }
+
+.desc {
+  grid-row-start: 2;
+  grid-column-start: 3;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-end; }
+  .desc .desc--logo {
+    text-align: right; }
+    .desc .desc--logo img {
+      width: 300px; }
+  .desc .desc__slogan {
+    color: white;
+    text-align: right; }
+    .desc .desc__slogan p {
+      font-size: 35px;
+      line-height: 40px;
+      font-weight: 500; }
+      .desc .desc__slogan p span {
+        font-size: 38px;
+        font-weight: bold; }
+  .desc .desc--text {
+    float: right;
+    width: 100%;
+    line-height: 20px;
+    font-size: 18px;
+    color: white;
+    margin: 20px 0px;
+    justify-content: center;
+    text-align: right; }
+
+/*# sourceMappingURL=styles.css.map */
